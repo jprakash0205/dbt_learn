@@ -1,0 +1,18 @@
+models:
+  - name: dim_customers
+    description: Customers table
+    columns:
+      - name: customer_id
+        description: Primary key of the customers
+      - name: first_name
+        description: First name of the customer
+      - name: last_name
+        description: Last name of the customer
+      - name: first_order_date
+        description: The date at which customer made their first order
+      - name: most_recent_order_date
+        description: Recent order date for the customer
+      - name: number_of_orders
+        description: Total number of orders by the customer
+      - name: lifetime_value
+        description: Total sale amount of the customer so far.

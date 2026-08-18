@@ -1,0 +1,16 @@
+models:
+  - name: stg_stripe__payments
+    description: Staged payments data from our jaffle shop app.
+    columns:
+      - name: payment_id
+        description: The primary key for payments
+      - name: order_id
+        description: Foreign key to stg_orders.order_id
+      - name: payment_method
+        description: "{{ doc('payment_method') }}"
+      - name: payment_status
+        description: Success or Failure status of the payment made
+      - name: amount
+        description: Payment amount converted to dollars $
+      - name: created_at
+        description: The date of payment
